@@ -1,4 +1,14 @@
-Patients
+
+<div>
+ <label>Name:</label>
+ {{input type="text" value=filterText placeholder="Enter patient name"}}
+ <!--TODO: use 'name' to search for patient info as an initial test-->
+</div>
+
+
+<h3>Patients</h3>
+
+
 <ul>
   {{#each content}}
     <li>{{fullName}}</li>
