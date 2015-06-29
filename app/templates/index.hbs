@@ -10,8 +10,8 @@
 
 
 <ul>
-  {{#each content}}
-    <li>{{fullName}}</li>
+  {{#each patient in filteredContent}}
+    <li>{{patient.fullName}}</li>
   {{else}}
     Didn't find any patients.
   {{/each}}
