@@ -1,6 +1,16 @@
-Patients
+
+<div>
+ <label>Name:</label>
+ {{input type="text" value=filterText placeholder="Enter patient name"}}
+ <!--TODO: use 'name' to search for patient info as an initial test-->
+</div>
+
+
+<h3>Patients</h3>
+
+
 <ul>
-  {{#each patient in content}}
+  {{#each patient in filteredContent}}
     <li>{{patient.fullName}}</li>
   {{else}}
     Didn't find any patients.
